@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: black;
+            color: white;
+        }
+        * {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" value="test">
+    <textarea name="" id="" cols="10" rows="10"></textarea>
+
+
+    <script>
+        let i = document.querySelector("input");
+        let area = document.querySelector("textarea");
+        
+        area.value = "Hello World!";
+
+        i.addEventListener("input", function (event) {
+            console.log(event.target); // element
+                                       // gdzie było
+                                       // zdarzenie
+            console.log(event.target.value);
+        });
+
+        area.addEventListener("input", function (event) { 
+            console.log(event.target.value);
+        });
+
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /*
+            Dzięki window możemy podpiąć nasze funkcje pod
+            konkretne zdarzenia w przeglądarce np.
+            zdarzenie load będzie wywołane gdy cała strona
+            będzie załadowana z kodem html, css i drzewem DOM,
+            dzięki czemu nasz program js może bez problemów
+            odwoływać się do elementów html strony.
+            Event handler to konkretna właściwość obiektu 
+            window np onload pod którą podpinamy naszą funkcję.
+        */ 
+
+        window.onload = function () {
+            console.log("Strona załadowana!");
+        };
+
+        window.onresize = function () {
+            console.log(window.innerWidth, innerHeight);
+        };
+        
+
+    </script>
+</body>
+</html>

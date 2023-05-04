@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: black;
+            color: white;
+        }
+
+        * {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>   
+    <script> 
+        /*
+            Prymitywy jak liczby, łańcuchy znaków itd
+            mogą zachowywać się jak obiekty, gdy użyjemy
+            ich metod lub właściwości. JS automatycznie
+            skonwertuje je na obiekt korzystając 
+            z konstruktora-wrappera. Wywołuje metodę
+            i przywraca wartość do prymitywu.
+        */
+
+        let str = "test";
+        str.length;
+
+        let txt = new String("test");
+        txt.length;
+
+        let num = 123.456;
+        console.log(num.toFixed(2)); // 123.46
+
+        let numb = new Number(123.456);
+        console.log(numb.toFixed(2));
+        
+
+    </script>
+</body>
+</html>

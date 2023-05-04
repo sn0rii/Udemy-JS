@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li class="chapter">#1</li>
+        <li class="chapter updated">#2</li>
+        <li class="chapter">#3</li>
+    </ul>
+
+    <script> 
+        
+        let li = document.querySelector("li.chapter.updated");
+        li.style.backgroundColor = "white";
+
+        let liList = document.querySelectorAll("li.chapter");
+
+        for (let i = 0; i < liList.length; i++) {
+            let liEl = liList[i];
+            liEl.style.color = "red";
+        }
+
+    </script>
+</body>
+</html>

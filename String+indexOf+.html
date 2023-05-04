@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: black;
+            color: white;
+        }
+
+        * {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>   
+    <script> 
+        
+        let str = "Ola ma kota. Dodatkowo Ola ma psa i rybki";
+
+        let pos = str.indexOf("Ola");
+        console.log(pos); // 0
+
+        let pos2 = str.indexOf("Ola", 5);
+        console.log(pos2); // 23
+
+        let pos3 = str.lastIndexOf("Ola");
+        console.log(pos3); // 23
+
+        let frag = str.substring(pos3); 
+        console.log(frag); // Ola ma psa i rybki
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+
+    </script>
+</body>
+</html>

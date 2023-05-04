@@ -1,0 +1,10 @@
+{
+    "user": {
+        "name": "Ania",
+        "surname": "Kowalska",
+        "languages": ["JavaScript", "Java"],
+        "address": {
+            "city": "Krk"
+        }
+    }
+}

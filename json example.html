@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: black;
+            color: white;
+        }
+
+        * {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>  
+    <script> 
+
+        let data = `
+        {
+            "user": {
+                "name": "Ania",
+                "surname": "Kowalska",
+                "languages": ["JavaScript", "Java"],
+                "address": {
+                    "city": "Krk"
+                }
+            }
+        }
+        `;
+
+        let obj = JSON.parse(data);
+        console.log(obj);
+        console.log(obj.user.name); // Ania
+
+        let house = {
+            city: "Wawa",
+            surfaceArea: 200
+        };
+
+        let houseStr = JSON.stringify(house);
+        console.log(houseStr);
+
+    </script>
+</body>
+</html>

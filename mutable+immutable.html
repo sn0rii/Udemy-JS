@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: black;
+            color: white;
+        }
+
+        * {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>   
+    <script> 
+        /*
+            Mutowalność to charakterystyka typu wartości 
+            w zmiennej, której wartość może być zmieniona. 
+            W JavaScript tylko obiekty oraz tablice mogą 
+            być zmieniane, prymitywy nie.
+            Oczywiście prymitywy mogą przyjmować różne 
+            wartości, w praktyce nazwa zmiennej 
+            wskazuje na nową wartość przy różnych 
+            operacjach.
+        */
+
+        let str = "text";
+        console.log(str[0]); // t
+        str[0] = "L";
+        console.log(str); // text
+
+        str = str + "!";
+
+        let data = {
+            a: 12
+        };
+
+        data.a = 34;
+        console.log(data);
+
+
+        
+
+        
+        
+
+    </script>
+</body>
+</html>

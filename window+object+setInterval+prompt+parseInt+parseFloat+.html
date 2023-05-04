@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /*
+            
+            window - to ogólnodostępny obiekt reprezentujący
+            aktualne okno przeglądarki w którym działa
+            program w JavaScript. Wewnątrz znajduje się 
+            wiele użytecznych właściwości (zmiennych tego 
+            obiektu) oraz metod.
+        */
+
+        console.log(window.innerWidth); // szerokość okna
+        console.log(innerHeight); // wysokość okna
+
+        //alert("Hello World!");
+        
+        setTimeout(function () {
+            console.log("Hello!");
+        }, 1000);
+
+
+        let intervalId = setInterval(function () {
+            let date = new Date();
+            console.log( date.getTime() );
+        }, 500);
+
+        setTimeout(function () {
+            clearInterval(intervalId);
+        }, 2000);
+
+        let num = prompt("Podaj liczbę:");
+        //let sum = 10 + parseInt(num);
+        let sum = 10 + parseFloat(num);
+        console.log("Liczba: " + sum);
+        
+
+    </script>
+</body>
+</html>
